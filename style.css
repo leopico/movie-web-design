@@ -279,3 +279,55 @@
         text-align: center;
         padding: 5px 0px;
     }
+    /*footer closed*/
+    /*Responsive*/
+    
+    @media(max-width: 991px) {
+        .home-text h1 {
+            font-size: 1rem;
+        }
+        .home-text {
+            padding: 0% 4%;
+            padding-top: 50px;
+        }
+        .section {
+            padding: 50px 0px;
+        }
+    }
+    
+    @media(max-width: 900px) {
+        header {
+            padding: 12px 4%;
+        }
+        .navbar {
+            display: none;
+        }
+        .home-text {
+            padding-top: 100px;
+        }
+        .btn {
+            padding: 0.4rem 1.2rem;
+        }
+    }
+    
+    @media(max-width: 370px) {
+        .contact form .email {
+            width: 150px;
+        }
+        .contact h2 {
+            font-size: 90%;
+        }
+        .home-text .play {
+            right: 2rem;
+            bottom: 8%;
+        }
+        .home-text .play .bx {
+            padding: 2px;
+        }
+        .home-text h1 {
+            font-size: 1.3rem;
+        }
+        .footer .logo {
+            font-size: 80%;
+        }
+    }
