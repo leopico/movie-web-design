@@ -12,6 +12,18 @@
     body {
         background-color: var(--bg-color);
     }
+    /*Custom scroll bar*/
+    
+    html::-webkit-scrollbar {
+        width: 0.3rem;
+        background-color: var(--bg-color);
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background: var(--main-color);
+        border-radius: 5rem;
+    }
+    /*Custom scrill bar closed*/
     
      :root {
         --text-color: rgb(243, 240, 240);
@@ -84,6 +96,8 @@
     .btn:hover {
         background-color: rgba(255, 0, 0, 0.898);
     }
+    /*Header closed*/
+    /*Cover open*/
     
     .container {
         width: 100%;
@@ -138,4 +152,130 @@
     .home-text .bx:hover {
         background-color: rgba(222, 16, 16, 0.776);
         transform: scale(1.1);
+    }
+    /*Cover closed*/
+    /*movie start*/
+    
+    .heading {
+        max-width: 968px;
+        margin: 20px auto 10px auto;
+        text-transform: uppercase;
+        color: var(--text-color);
+        font-weight: 500;
+        border-bottom: 1px solid var(--main-color);
+    }
+    
+    .movie-container {
+        display: grid;
+        /*grid-template-columns: auto auto auto auto;*/
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        max-width: 960px;
+        margin: 0px auto 0px auto;
+        color: var(--text-color);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .box .image {
+        width: 100%;
+        height: 270px;
+    }
+    
+    .box .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.8);
+        transition: 0.5S;
+        box-shadow: 1.3px 1.3px 1.3px rgba(255, 238, 255, 0.296);
+        cursor: pointer;
+    }
+    
+    .box .image h3 {
+        margin-top: 2rem;
+    }
+    
+    .box .image img:hover {
+        transform: translateY(10PX);
+        filter: brightness(1);
+    }
+    /*Movie End*/
+    /*Message Section*/
+    
+    .contact {
+        color: var(--text-color);
+        max-width: 968px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .contact h2 {
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .contact form {
+        padding: 10px;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--text-color);
+    }
+    
+    form .email {
+        border: none;
+        outline: none;
+        width: 200px;
+        background-color: var(--text-color);
+    }
+    
+    .contact .btn {
+        border: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    /*Message Section end*/
+    /*footer*/
+    
+    .footer {
+        max-width: 968px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .social {
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    .social .bx {
+        background-color: var(--main-color);
+        padding: 2px;
+        border-radius: 50%;
+        font-size: 2rem;
+        border: 2px solid rgba(10, 10, 10, 0.73);
+        color: var(--text-color);
+        transition: 0.3s;
+    }
+    
+    .social .bx:hover {
+        transform: scale(1.05);
+        filter: brightness(2);
+    }
+    
+    .copyright {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        margin-top: 20px;
+        text-align: center;
+        padding: 5px 0px;
     }
